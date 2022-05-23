@@ -1,7 +1,7 @@
 -----
 
 <p align="center">
-<img src="https://repository-images.githubusercontent.com/474762439/6b1fd1f3-8730-4b0a-ad70-f31be654005b", width="500", height="500">
+<img src="https://repository-images.githubusercontent.com/474762439/7e20fd0d-ff46-4af8-9497-c328f83d5644", width="500", height="500">
 </p>
 
 -----
@@ -33,7 +33,7 @@ It is going to add multiple layers, with a final layer allowing the user to camo
 <br>
 
 <p align="right">
-<img src="https://repository-images.githubusercontent.com/474762439/6b1fd1f3-8730-4b0a-ad70-f31be654005b" width="250", height="250">
+<img src="https://repository-images.githubusercontent.com/474762439/7e20fd0d-ff46-4af8-9497-c328f83d5644" width="250", height="250">
 </p>
 
 <br>

@@ -62,7 +62,7 @@ It is going to add multiple layers, with a final layer allowing the user to camo
 <p align="center"><strong><i>Feel free to make a pull request on this repository to submit any idea!</i></strong</p>
 
 <br><br>
-* Complexify the obfuscation
+* Add more layers :)
 <br><br>
   
 -----

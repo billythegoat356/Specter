@@ -1,0 +1,1 @@
+input("Join discord.gg/plague :)")

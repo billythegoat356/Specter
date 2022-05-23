@@ -70,7 +70,7 @@ It is going to add multiple layers, with a final layer allowing the user to camo
 ### <p align="center">🎨 Contributors 🎨</p>
 
 <br><br>
-* [Bleu-No]([link](https://github.com/Bleu-No)) | Explained me how to use marshal module
+* [Bleu-No](https://github.com/Bleu-No) | Explained me how to use marshal module
 * [svenskithesource](https://github.com/Svenskithesource) | Helped me to understand how .PYC files work
 <br><br>
   

@@ -39,7 +39,7 @@ It is going to add multiple layers, with a final layer allowing the user to camo
 <br>
 <strong>- You have around 1/10 chance for your obfuscated code to cause an error (I don't know why). If it does, please obfuscate it again</strong>
 <br>
-<strong>- Isn't compatible with all Python versions. If you obfuscate a file with Python3.9, it will work for all the versions under Python3.10. But if you obfuscate a file with Python3.10, it will only work for all the versions above Python3.10</strong>
+<strong>- Isn't compatible with all Python versions. You have to try it yourself to see</strong>
 <br><br>
 
 -----

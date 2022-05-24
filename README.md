@@ -67,7 +67,7 @@ It is going to add multiple layers, with a final layer allowing the user to camo
   
 -----
   
-### <p align="center">🎨 Contributors 🎨</p>
+### <p align="center">🎨 Credits 🎨</p>
 
 <br><br>
 * [Bleu-No](https://github.com/Bleu-No) | Explained me how to use marshal module

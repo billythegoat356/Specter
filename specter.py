@@ -209,7 +209,7 @@ def main():
     print()
     print(Colorate.Diagonal(Colors.purple_to_blue, Center.XCenter(banner + '\n\n')))
 
-    file = input(stage(f"Drag your file to obfuscate {Col.blue}-> {Col.reset}", "?")).replace('"','').replace("'","")
+    file = input(stage(f"Drag the file you want to obfuscate {Col.blue}-> {Col.reset}", "?")).replace('"','').replace("'","")
     print('\n')
 
     try:

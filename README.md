@@ -11,7 +11,7 @@
 <br><br>
 <p align="center">
 <strong>
-Specter is another Python3 obfuscator using a special technique to make your code <i>even more</i> hard to deobfuscate.
+Specter is another Python3 obfuscator using a special technique to make your code <i>even harder</i> to deobfuscate.
 <br>
 It is going to add multiple layers, with a final layer allowing the user to camouflate his code so the obfuscate code looks like a normal one.
 </strong>

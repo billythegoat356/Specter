@@ -161,7 +161,7 @@ except:
         codevars = "\n".join(f"{a} = Func.calculate({randint(1,9)}){' ' * 500},Func.define('{a}', {b})" for a, b in vars.items())
         print(stage("Camouflation of the obfuscated code..."))
         script = fr"""
-# This code has been obfuscated with Specter
+# this code has been obfuscated with Specter
 
 # https://github.com/billythegoat356/Specter
 

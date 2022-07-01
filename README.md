@@ -11,7 +11,7 @@
 <br><br>
 <p align="center">
 <strong>
-First of all, if you're looking for the <strong>BEST</strong> fully Python3 obfuscator, you should check <a href="https://github.com/billythegoat356/Hyperion">Hyperion</a>!
+First of all, if you're looking for the <strong>BEST</strong> fully Python obfuscator, you should check <a href="https://github.com/billythegoat356/Hyperion">Hyperion</a>!
 <br><br>
 Specter is another Python3 obfuscator using a special technique to make your code <i>even harder</i> to deobfuscate.
 <br>

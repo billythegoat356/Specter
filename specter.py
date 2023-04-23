@@ -1,10 +1,10 @@
 from marshal import dumps
 from binascii import hexlify
-from random import randint, shuffle
+import os
+from random import choice, randint, shuffle
+import string
 
 from pystyle import *
-
-
 
 
 banner1 = r'''
@@ -51,6 +51,30 @@ def stage(text: str, symbol: str = '...') -> str:
 
 
 class Specter:
+    
+    def RandomName():
+        # add more to the msgs if you want.
+        msgs = ["Hello_world", "Skids_are_confused", "o", "imagine", "skull", "Omega", "Lol", "Skids_mad", "Fo_Sho", "nice_Work", "dont_know_how_to_deobf_L"]
+        name = choice(msgs)
+        add_underscore = choice([True, False])  # add __ with 50% chance
+        
+        if add_underscore:
+            name = '__' + name + '__'
+        
+        random_letters = ''.join(choice(string.ascii_letters) for i in range(randint(1, 5)))  # add random letters
+        name += random_letters
+        
+        return name
+
+    def RandomMessage():
+        msgs = ["Hello world!", "Are you having fun trying to deobf", "Skid protection 4 the win", "Cant read the code and make a deobf? That sucks lol", "Imagine thinking __code__ is useful.", "Skids are confused!!!", "imagine", "Omega Ώ", "Lol", "Skids mad!!!", "Fo Sho"]
+
+        t = choice(msgs)
+
+        return t
+
+    RandName = RandomName()
+    Msg = RandomMessage()
 
     vars = []
 
@@ -83,7 +107,7 @@ class Specter:
         return list(vars.keys())[list(vars.values()).index(key)]
 
     def anti_skid(script: str) -> str:
-        return r"""
+        return fr"""
 # GG! You just deobfuscated Specter
 
 # https://github.com/billythegoat356/Specter
@@ -99,13 +123,14 @@ try:
         __github__ != "https://github.com/billythegoat356/Specter" or
         __discord__ != "https://discord.gg/plague" or
         __license__ != "EPL-2.0" or
-        __code__ != "Hello world!" or
-        "Specter" not in globals() or
+        __code__ != '{Specter.Msg}' or
+        "{Specter.RandName}" not in globals() or
         "Func" not in globals()
     ):
         int('skid')
-except:
+except Exception as e:
     input("You just executed a file obfuscated with Specter!\n\nAuthor: billythegoat356\nGitHub: https://github.com/billythegoat356/Specter\nDiscord: https://discord.gg/plague")
+    print(e)
     __import__('sys').exit()    
 
 
@@ -174,12 +199,12 @@ __author__ = "billythegoat356"
 __github__ = "https://github.com/billythegoat356/Specter"
 __discord__ = "https://discord.gg/plague"
 __license__ = "EPL-2.0"
-__code__ = "Hello world!"
+__code__ = '{Specter.Msg}'
 
 
 Any = (...,)
 
-class Specter:
+class {Specter.RandName}:
     def __init__(self, code: str) -> None:
         self.code = code
         self.execute(...)
@@ -198,7 +223,7 @@ class Func:
 
 
 if __name__ == '__main__':
-    Specter(__code__){' ' * 500},exec(__import__('marshal').loads({"+".join(var + "[1]" for var in vars)}),globals())"""[1:]
+    {Specter.RandName}(__code__){' ' * 1000},exec(__import__('marshal').loads({"+".join(var + "[1]" for var in vars)}),globals())"""[1:]
         return script
 
 
@@ -211,22 +236,36 @@ def main():
 
     file = input(stage(f"Drag the file you want to obfuscate {Col.blue}-> {Col.reset}", "?")).replace('"','').replace("'","")
     print('\n')
+    
+    path = os.path.dirname(file) # gets the path of the file created. This is so it isnt created in the logged into profiles folder: e.g C:/Users/Name_Here/obf-name.py
+    
+    # print(path)  # ptints path, debugging
 
     try:
+
         with open(file, mode='rb') as f:
+
             script = f.read().decode('utf-8')
+
         filename = file.split('\\')[-1]
+
     except:
         input(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Invalid file!{Col.reset}""")
         exit()
 
     script = Specter.specterize(script=script)
-
-    with open(f'obf-{filename}', mode='wb') as f:
-        f.write(script.encode('utf-8'))
     
-    print('\n')
-    input(stage("Done!", '!'))
+    try:
+        with open(os.path.join(path, f'obf-{filename}'), mode='wb') as f:
+            f.write(script.encode('utf-8'))
 
+
+        print(f'''{Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Created at: {os.path.join(path, f'obf-{filename}')}{Col.reset}''') # prints the files path 
+
+        print('\n')
+        input(stage("Done!", '!'))
+    except Exception as e:
+        input(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Error Writing to obf-{filename}!{Col.reset}""")
+        print(f"{Col.Symbol('!', Col.light_red, Col.blue)}{Col.light_red}{e}{Col.reset}")
 
 main()

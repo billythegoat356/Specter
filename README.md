@@ -13,7 +13,7 @@
 <strong>
 First of all, if you're looking for the <strong>BEST</strong> fully Python obfuscator, you should check <a href="https://github.com/billythegoat356/Hyperion">Hyperion</a>!
 <br><br>
-Specter is another Python3 obfuscator using a special technique to make your code <i>even harder</i> to deobfuscate.
+Specter is another Python3 obfuscator using a special technique to make your code <i>even harder</i> to deobfuscate. Only supports 3.9 <
 <br>
 It is going to add multiple layers, with a final layer allowing the user to camouflate his code so the obfuscate code looks like a normal one.
 </strong>
@@ -33,15 +33,12 @@ It is going to add multiple layers, with a final layer allowing the user to camo
 <br>
 <strong>+ Can be compiled to .EXE</strong>
 <br>
-
-<p align="right">
-<img src="https://repository-images.githubusercontent.com/474762439/7e20fd0d-ff46-4af8-9497-c328f83d5644" width="250", height="250">
-</p>
-
+<strong>+ Generates Random Variable names && Messages to troll skids</strong>
 <br>
+
 <strong>- You have around 1/10 chance for your obfuscated code to cause an error (I don't know why). If it does, please obfuscate it again</strong>
 <br>
-<strong>- Isn't compatible with all Python versions. You have to try it yourself to see</strong>
+<strong>- Isn't compatible with all Python versions. You have to try it yourself to see (Recommend using py - 3.9)</strong>
 <br><br>
 
 -----

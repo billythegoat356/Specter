@@ -73,9 +73,9 @@ class Specter:
         return "\x00".join(str(ord(x)+key) for x in text)
 
     def randvar() -> str:
-        var = randint(1000, 9999)
+        var = randint(1000, 99999)
         while var in Specter.vars:
-            var = randint(1000, 9999)
+            var = randint(1000, 99999)
         Specter.vars.append(var)
         return f"__{var}__"
     

@@ -103,7 +103,7 @@ try:
         "Specter" not in globals() or
         "Func" not in globals()
     ):
-        int('skid')
+        print('skid')
 except:
     input("You just executed a file obfuscated with Specter!\n\nAuthor: billythegoat356\nGitHub: https://github.com/billythegoat356/Specter\nDiscord: https://discord.gg/plague")
     __import__('sys').exit()    
